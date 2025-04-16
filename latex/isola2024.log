@@ -1,0 +1,934 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.4.5)  16 APR 2025 14:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**isola2024.tex
+(./isola2024.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(./llncs.cls
+Document Class: llncs 2024/01/29 v2.24 
+ LaTeX document class for Lecture Notes in Computer Science
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count196
+\c@section=\count197
+\c@subsection=\count198
+\c@subsubsection=\count199
+\c@paragraph=\count266
+\c@subparagraph=\count267
+\c@figure=\count268
+\c@table=\count269
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count270
+\mult@box=\box52
+\multicol@leftmargin=\dimen142
+\c@unbalance=\count271
+\c@collectmore=\count272
+\doublecol@number=\count273
+\multicoltolerance=\count274
+\multicolpretolerance=\count275
+\full@width=\dimen143
+\page@free=\dimen144
+\premulticols=\dimen145
+\postmulticols=\dimen146
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box53
+\last@line=\box54
+\mc@boxedresult=\box55
+\maxbalancingoverflow=\dimen147
+\mult@rightbox=\box56
+\mult@grightbox=\box57
+\mult@firstbox=\box58
+\mult@gfirstbox=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\c@minrows=\count276
+\c@columnbadness=\count277
+\c@finalcolumnbadness=\count278
+\last@try=\dimen148
+\multicolovershoot=\dimen149
+\multicolundershoot=\dimen150
+\mult@nat@firstbox=\box96
+\colbreak@box=\box97
+\mc@col@check@num=\count279
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/oberdiek/aliascnt.sty
+Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
+)
+\c@chapter=\count280
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 379.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 380.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 381.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 382.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 383.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 384.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 385.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 386.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 387.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 388.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 389.
+LaTeX Info: Redefining \vec on input line 394.
+\tocchpnum=\dimen151
+\tocsecnum=\dimen152
+\tocsectotal=\dimen153
+\tocsubsecnum=\dimen154
+\tocsubsectotal=\dimen155
+\tocsubsubsecnum=\dimen156
+\tocsubsubsectotal=\dimen157
+\tocparanum=\dimen158
+\tocparatotal=\dimen159
+\tocsubparanum=\dimen160
+\@tempcntc=\count281
+\fnindent=\dimen161
+\c@@inst=\count282
+\c@@auth=\count283
+\c@auco=\count284
+\instindent=\dimen162
+\authrun=\box98
+\authorrunning=\toks17
+\tocauthor=\toks18
+\titrun=\box99
+\titlerunning=\toks19
+\toctitle=\toks20
+\c@theorem=\count285
+\c@case=\count286
+\c@conjecture=\count287
+\c@corollary=\count288
+\c@definition=\count289
+\c@example=\count290
+\c@exercise=\count291
+\c@lemma=\count292
+\c@note=\count293
+\c@problem=\count294
+\c@property=\count295
+\c@proposition=\count296
+\c@question=\count297
+\c@solution=\count298
+\c@remark=\count299
+\headlineindent=\dimen163
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/l3backend/l3backend-pdftex.d
+ef
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count300
+\l__pdf_internal_box=\box100
+) (./isola2024.aux)
+\openout1 = `isola2024.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen166
+\scratchbox=\box101
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen167
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks23
+)
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.s
+ty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 9.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 9.
+
+Overfull \hbox (3.3161pt too wide) in paragraph at lines 12--13
+[]\T1/cmr/m/n/9 The soft-ware de-vel-op-ment com-mu-nity is dis-cussing how Cha
+t-
+ []
+
+
+
+[1
+
+{/usr/local/texlive/2024basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pagd8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pagdo8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pagk8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pagko8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pbkd8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pbkdi8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `pbkdo8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pbkl8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pbkli8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `pbklo8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pcrb8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pcrbo8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pcrr8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pcrro8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvb8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvb8rn' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvbo8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvbo8rn' already exists, duplic
+ates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvr8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvr8rn' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvro8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `phvro8rn' already exists, duplic
+ates ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pncb8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pncbi8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `pncbo8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pncr8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pncri8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `pncro8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pplb8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pplbi8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `pplbo8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pplr8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pplri8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `pplro8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `psyr' already exists, duplicates
+ ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `psyro': SlantFont/ExtendFont can
+ be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `ptmb8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `ptmbi8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `ptmbo8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `ptmr8r' already exists, duplicat
+es ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `ptmri8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): invalid entry for `ptmro8r': SlantFont/ExtendFont c
+an be used only with embedded Type1 fonts
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pzcmi8r' already exists, duplica
+tes ignored
+
+
+pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
+/pdftex/updmap/pdftex.map): fontmap entry for `pzdr' already exists, duplicates
+ ignored
+}]
+
+[2]
+
+[3]
+
+[4]
+
+[5]
+
+[6]
+Overfull \hbox (3.87775pt too wide) in paragraph at lines 170--172
+[]\T1/cmr/m/n/10 We there-fore pre-fer to tap into the de-vel-oper's fine- grai
+ned pro-cess of progress.
+ []
+
+
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11]
+
+[12]
+
+[13]
+
+[14]
+
+[15]
+
+[16]
+<Pictures/Picture1.jpg, id=62, 337.26pt x 376.40625pt>
+File: Pictures/Picture1.jpg Graphic file (type jpg)
+<use Pictures/Picture1.jpg>
+Package pdftex.def Info: Pictures/Picture1.jpg  used on input line 474.
+(pdftex.def)             Requested size: 173.56177pt x 193.71066pt.
+<Pictures/Picture2.jpg, id=63, 358.33875pt x 134.5025pt>
+File: Pictures/Picture2.jpg Graphic file (type jpg)
+<use Pictures/Picture2.jpg>
+Package pdftex.def Info: Pictures/Picture2.jpg  used on input line 480.
+(pdftex.def)             Requested size: 173.56177pt x 65.14742pt.
+<Pictures/Picture3.jpg, id=64, 738.76pt x 361.35pt>
+File: Pictures/Picture3.jpg Graphic file (type jpg)
+<use Pictures/Picture3.jpg>
+Package pdftex.def Info: Pictures/Picture3.jpg  used on input line 486.
+(pdftex.def)             Requested size: 173.56177pt x 84.8952pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture4.jpg, id=65, 481.8pt x 166.6225pt>
+File: Pictures/Picture4.jpg Graphic file (type jpg)
+<use Pictures/Picture4.jpg>
+Package pdftex.def Info: Pictures/Picture4.jpg  used on input line 492.
+(pdftex.def)             Requested size: 173.56177pt x 60.02219pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture5.jpg, id=66, 738.76pt x 646.415pt>
+File: Pictures/Picture5.jpg Graphic file (type jpg)
+<use Pictures/Picture5.jpg>
+Package pdftex.def Info: Pictures/Picture5.jpg  used on input line 498.
+(pdftex.def)             Requested size: 173.56177pt x 151.86809pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture6.jpg, id=67, 750.805pt x 288.07625pt>
+File: Pictures/Picture6.jpg Graphic file (type jpg)
+<use Pictures/Picture6.jpg>
+Package pdftex.def Info: Pictures/Picture6.jpg  used on input line 504.
+(pdftex.def)             Requested size: 173.56177pt x 66.59021pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture7.jpg, id=68, 726.715pt x 879.285pt>
+File: Pictures/Picture7.jpg Graphic file (type jpg)
+<use Pictures/Picture7.jpg>
+Package pdftex.def Info: Pictures/Picture7.jpg  used on input line 510.
+(pdftex.def)             Requested size: 173.56177pt x 209.99962pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture8.jpg, id=69, 741.77126pt x 956.57375pt>
+File: Pictures/Picture8.jpg Graphic file (type jpg)
+<use Pictures/Picture8.jpg>
+Package pdftex.def Info: Pictures/Picture8.jpg  used on input line 516.
+(pdftex.def)             Requested size: 173.56177pt x 223.81693pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture9.jpg, id=70, 741.77126pt x 616.3025pt>
+File: Pictures/Picture9.jpg Graphic file (type jpg)
+<use Pictures/Picture9.jpg>
+Package pdftex.def Info: Pictures/Picture9.jpg  used on input line 522.
+(pdftex.def)             Requested size: 173.56177pt x 144.20103pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture10.jpg, id=71, 481.8pt x 82.3075pt>
+File: Pictures/Picture10.jpg Graphic file (type jpg)
+<use Pictures/Picture10.jpg>
+Package pdftex.def Info: Pictures/Picture10.jpg  used on input line 528.
+(pdftex.def)             Requested size: 173.56177pt x 29.6495pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture11.jpg, id=72, 481.8pt x 216.81pt>
+File: Pictures/Picture11.jpg Graphic file (type jpg)
+<use Pictures/Picture11.jpg>
+Package pdftex.def Info: Pictures/Picture11.jpg  used on input line 534.
+(pdftex.def)             Requested size: 173.56177pt x 78.10115pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture12.jpg, id=73, 481.8pt x 108.405pt>
+File: Pictures/Picture12.jpg Graphic file (type jpg)
+<use Pictures/Picture12.jpg>
+Package pdftex.def Info: Pictures/Picture12.jpg  used on input line 540.
+(pdftex.def)             Requested size: 173.56177pt x 39.05057pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture13.jpg, id=74, 759.83875pt x 750.805pt>
+File: Pictures/Picture13.jpg Graphic file (type jpg)
+<use Pictures/Picture13.jpg>
+Package pdftex.def Info: Pictures/Picture13.jpg  used on input line 546.
+(pdftex.def)             Requested size: 173.56177pt x 171.49005pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture14.jpg, id=75, 738.76pt x 658.46pt>
+File: Pictures/Picture14.jpg Graphic file (type jpg)
+<use Pictures/Picture14.jpg>
+Package pdftex.def Info: Pictures/Picture14.jpg  used on input line 552.
+(pdftex.def)             Requested size: 173.56177pt x 154.69794pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture15.jpg, id=76, 738.76pt x 119.44624pt>
+File: Pictures/Picture15.jpg Graphic file (type jpg)
+<use Pictures/Picture15.jpg>
+Package pdftex.def Info: Pictures/Picture15.jpg  used on input line 558.
+(pdftex.def)             Requested size: 173.56177pt x 28.06258pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture16.jpg, id=77, 481.8pt x 44.165pt>
+File: Pictures/Picture16.jpg Graphic file (type jpg)
+<use Pictures/Picture16.jpg>
+Package pdftex.def Info: Pictures/Picture16.jpg  used on input line 564.
+(pdftex.def)             Requested size: 173.56177pt x 15.90948pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture17.jpg, id=78, 683.55376pt x 1265.72874pt>
+File: Pictures/Picture17.jpg Graphic file (type jpg)
+<use Pictures/Picture17.jpg>
+Package pdftex.def Info: Pictures/Picture17.jpg  used on input line 570.
+(pdftex.def)             Requested size: 173.56177pt x 321.37566pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture18.jpg, id=79, 677.53125pt x 744.7825pt>
+File: Pictures/Picture18.jpg Graphic file (type jpg)
+<use Pictures/Picture18.jpg>
+Package pdftex.def Info: Pictures/Picture18.jpg  used on input line 576.
+(pdftex.def)             Requested size: 173.56177pt x 190.7864pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture19.jpg, id=80, 481.8pt x 100.375pt>
+File: Pictures/Picture19.jpg Graphic file (type jpg)
+<use Pictures/Picture19.jpg>
+Package pdftex.def Info: Pictures/Picture19.jpg  used on input line 582.
+(pdftex.def)             Requested size: 173.56177pt x 36.15793pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture20.jpg, id=81, 427.5975pt x 1166.3575pt>
+File: Pictures/Picture20.jpg Graphic file (type jpg)
+<use Pictures/Picture20.jpg>
+Package pdftex.def Info: Pictures/Picture20.jpg  used on input line 588.
+(pdftex.def)             Requested size: 173.56177pt x 473.42224pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture21.jpg, id=82, 741.77126pt x 331.2375pt>
+File: Pictures/Picture21.jpg Graphic file (type jpg)
+<use Pictures/Picture21.jpg>
+Package pdftex.def Info: Pictures/Picture21.jpg  used on input line 594.
+(pdftex.def)             Requested size: 173.56177pt x 77.50218pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture22.jpg, id=83, 481.8pt x 993.7125pt>
+File: Pictures/Picture22.jpg Graphic file (type jpg)
+<use Pictures/Picture22.jpg>
+Package pdftex.def Info: Pictures/Picture22.jpg  used on input line 600.
+(pdftex.def)             Requested size: 173.56177pt x 357.96367pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture23.jpg, id=84, 445.665pt x 449.68pt>
+File: Pictures/Picture23.jpg Graphic file (type jpg)
+<use Pictures/Picture23.jpg>
+Package pdftex.def Info: Pictures/Picture23.jpg  used on input line 606.
+(pdftex.def)             Requested size: 173.56177pt x 175.12747pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture24.jpg, id=85, 481.8pt x 48.18pt>
+File: Pictures/Picture24.jpg Graphic file (type jpg)
+<use Pictures/Picture24.jpg>
+Package pdftex.def Info: Pictures/Picture24.jpg  used on input line 612.
+(pdftex.def)             Requested size: 173.56177pt x 17.3558pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture25.jpg, id=86, 445.665pt x 728.7225pt>
+File: Pictures/Picture25.jpg Graphic file (type jpg)
+<use Pictures/Picture25.jpg>
+Package pdftex.def Info: Pictures/Picture25.jpg  used on input line 618.
+(pdftex.def)             Requested size: 173.56177pt x 283.80032pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture26.jpg, id=87, 481.8pt x 76.285pt>
+File: Pictures/Picture26.jpg Graphic file (type jpg)
+<use Pictures/Picture26.jpg>
+Package pdftex.def Info: Pictures/Picture26.jpg  used on input line 624.
+(pdftex.def)             Requested size: 173.56177pt x 27.48003pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture27.jpg, id=88, 481.8pt x 1013.7875pt>
+File: Pictures/Picture27.jpg Graphic file (type jpg)
+<use Pictures/Picture27.jpg>
+Package pdftex.def Info: Pictures/Picture27.jpg  used on input line 630.
+(pdftex.def)             Requested size: 173.56177pt x 365.19527pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture28.jpg, id=89, 429.605pt x 1336.995pt>
+File: Pictures/Picture28.jpg Graphic file (type jpg)
+<use Pictures/Picture28.jpg>
+Package pdftex.def Info: Pictures/Picture28.jpg  used on input line 636.
+(pdftex.def)             Requested size: 173.56177pt x 540.15396pt.
+
+LaTeX Warning: Float too large for page by 13.76526pt on input line 639.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture29.jpg, id=90, 741.77126pt x 97.36375pt>
+File: Pictures/Picture29.jpg Graphic file (type jpg)
+<use Pictures/Picture29.jpg>
+Package pdftex.def Info: Pictures/Picture29.jpg  used on input line 642.
+(pdftex.def)             Requested size: 173.56177pt x 22.78093pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture30.jpg, id=91, 481.8pt x 807.015pt>
+File: Pictures/Picture30.jpg Graphic file (type jpg)
+<use Pictures/Picture30.jpg>
+Package pdftex.def Info: Pictures/Picture30.jpg  used on input line 648.
+(pdftex.def)             Requested size: 173.56177pt x 290.70988pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture31.jpg, id=92, 483.8075pt x 112.42pt>
+File: Pictures/Picture31.jpg Graphic file (type jpg)
+<use Pictures/Picture31.jpg>
+Package pdftex.def Info: Pictures/Picture31.jpg  used on input line 654.
+(pdftex.def)             Requested size: 173.56177pt x 40.32878pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture31a.jpg, id=93, 723.70375pt x 511.9125pt>
+File: Pictures/Picture31a.jpg Graphic file (type jpg)
+<use Pictures/Picture31a.jpg>
+Package pdftex.def Info: Pictures/Picture31a.jpg  used on input line 660.
+(pdftex.def)             Requested size: 173.56177pt x 122.76778pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture32.jpg, id=94, 481.8pt x 1013.7875pt>
+File: Pictures/Picture32.jpg Graphic file (type jpg)
+<use Pictures/Picture32.jpg>
+Package pdftex.def Info: Pictures/Picture32.jpg  used on input line 666.
+(pdftex.def)             Requested size: 173.56177pt x 365.19527pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture33.jpg, id=95, 662.475pt x 483.8075pt>
+File: Pictures/Picture33.jpg Graphic file (type jpg)
+<use Pictures/Picture33.jpg>
+Package pdftex.def Info: Pictures/Picture33.jpg  used on input line 672.
+(pdftex.def)             Requested size: 173.56177pt x 126.74667pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture34.jpg, id=96, 529.98pt x 784.9325pt>
+File: Pictures/Picture34.jpg Graphic file (type jpg)
+<use Pictures/Picture34.jpg>
+Package pdftex.def Info: Pictures/Picture34.jpg  used on input line 678.
+(pdftex.def)             Requested size: 173.56177pt x 257.05229pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture35.jpg, id=97, 520.94624pt x 689.57625pt>
+File: Pictures/Picture35.jpg Graphic file (type jpg)
+<use Pictures/Picture35.jpg>
+Package pdftex.def Info: Pictures/Picture35.jpg  used on input line 684.
+(pdftex.def)             Requested size: 173.56177pt x 229.73892pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture36.jpg, id=98, 717.68124pt x 1210.5225pt>
+File: Pictures/Picture36.jpg Graphic file (type jpg)
+<use Pictures/Picture36.jpg>
+Package pdftex.def Info: Pictures/Picture36.jpg  used on input line 690.
+(pdftex.def)             Requested size: 173.56177pt x 292.74786pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture37.jpg, id=99, 738.76pt x 483.8075pt>
+File: Pictures/Picture37.jpg Graphic file (type jpg)
+<use Pictures/Picture37.jpg>
+Package pdftex.def Info: Pictures/Picture37.jpg  used on input line 696.
+(pdftex.def)             Requested size: 173.56177pt x 113.66524pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture38.jpg, id=100, 496.85625pt x 492.84125pt>
+File: Pictures/Picture38.jpg Graphic file (type jpg)
+<use Pictures/Picture38.jpg>
+Package pdftex.def Info: Pictures/Picture38.jpg  used on input line 702.
+(pdftex.def)             Requested size: 173.56177pt x 172.1586pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture39.jpg, id=101, 741.77126pt x 486.81876pt>
+File: Pictures/Picture39.jpg Graphic file (type jpg)
+<use Pictures/Picture39.jpg>
+Package pdftex.def Info: Pictures/Picture39.jpg  used on input line 708.
+(pdftex.def)             Requested size: 173.56177pt x 113.90472pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./isola2024.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[]\T1/cmr/m/n/9 Martin Fowler.  An ex-am-ple of llm prompt-ing for pro-gram-min
+g.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
+[]\T1/cmr/m/n/9 Danusha Navod Gam-age.  7 ways chat-gpt can help de-vel-op-ers.
+
+ []
+
+
+
+[17 <./Pictures/Picture1.jpg> <./Pictures/Picture2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+[]\T1/cmr/m/n/9 David Gewirtz.  How to use chat-gpt to write code.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
+[]\T1/cmr/m/n/9 Philp Guo.  Real-real-world pro-gram-ming with chat-gpt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
+\T1/cmr/m/n/9 https://www.oreilly.com/radar/real-real-world-programming-with-ch
+atgpt/, July
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
+[]\T1/cmr/m/n/9 Mike Loukides.  Real world pro-gram-ming with chat-gpt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
+\T1/cmr/m/n/9 https://www.oreilly.com/radar/real-world-programming-with-chatgpt
+/, April
+ []
+
+)
+
+[18 <./Pictures/Picture3.jpg> <./Pictures/Picture4.jpg>]
+
+[19 <./Pictures/Picture5.jpg> <./Pictures/Picture6.jpg> <./Pictures/Picture7.jp
+g>]
+
+[20 <./Pictures/Picture8.jpg> <./Pictures/Picture9.jpg> <./Pictures/Picture10.j
+pg>]
+
+[21 <./Pictures/Picture11.jpg> <./Pictures/Picture12.jpg> <./Pictures/Picture13
+.jpg>]
+
+[22 <./Pictures/Picture14.jpg> <./Pictures/Picture15.jpg> <./Pictures/Picture16
+.jpg>]
+
+[23 <./Pictures/Picture17.jpg>]
+
+[24 <./Pictures/Picture18.jpg> <./Pictures/Picture19.jpg>]
+
+[25 <./Pictures/Picture20.jpg>]
+
+[26 <./Pictures/Picture21.jpg> <./Pictures/Picture22.jpg>]
+
+[27 <./Pictures/Picture23.jpg> <./Pictures/Picture24.jpg>]
+
+[28 <./Pictures/Picture25.jpg> <./Pictures/Picture26.jpg>]
+
+[29 <./Pictures/Picture27.jpg>]
+
+[30 <./Pictures/Picture28.jpg>]
+
+[31 <./Pictures/Picture29.jpg> <./Pictures/Picture30.jpg> <./Pictures/Picture31
+.jpg>]
+
+[32 <./Pictures/Picture31a.jpg> <./Pictures/Picture32.jpg>]
+
+[33 <./Pictures/Picture33.jpg> <./Pictures/Picture34.jpg>]
+
+[34 <./Pictures/Picture35.jpg>]
+
+[35 <./Pictures/Picture36.jpg> <./Pictures/Picture37.jpg>]
+
+[36 <./Pictures/Picture38.jpg> <./Pictures/Picture39.jpg>] (./isola2024.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 2342 strings out of 474663
+ 38571 string characters out of 5750970
+ 431533 words of memory out of 5000000
+ 25402 multiletter control sequences out of 15000+600000
+ 565985 words of font info for 47 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 57i,7n,65p,568b,309s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/mortenheinesorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljf
+our/jknappen/ec/tcrm1000.600pk> </Users/mortenheinesorensen/Library/texlive/202
+4basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/mortenhein
+esorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1
+200.600pk> </Users/mortenheinesorensen/Library/texlive/2024basic/texmf-var/font
+s/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/mortenheinesorensen/Library/tex
+live/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/mo
+rtenheinesorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ectt0900.600pk> </Users/mortenheinesorensen/Library/texlive/2024basic/texmf-
+var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/mortenheinesorensen/Lib
+rary/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </
+Users/mortenheinesorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/j
+knappen/ec/ecbx1440.600pk>
+Output written on isola2024.pdf (36 pages, 2293898 bytes).
+PDF statistics:
+ 478 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+

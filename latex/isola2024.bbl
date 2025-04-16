@@ -1,0 +1,37 @@
+\begin{thebibliography}{1}
+
+\bibitem{Fowler2023}
+Martin Fowler.
+\newblock An example of llm prompting for programming.
+\newblock \url{https://martinfowler.com/articles/2023-chatgpt-xu-hao.html},
+  April 13 2023.
+
+\bibitem{Gamage2023}
+Danusha~Navod Gamage.
+\newblock 7 ways chatgpt can help developers.
+\newblock
+  \url{https://cult.honeypot.io/reads/how-can-chatgpt-help-developers/}, March
+  7 2023.
+
+\bibitem{Gewirtz2023a}
+David Gewirtz.
+\newblock How to use chatgpt to write code.
+\newblock
+  \url{https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/}, June 2
+  2023.
+
+\bibitem{Guo2023}
+Philp Guo.
+\newblock Real-real-world programming with chatgpt.
+\newblock
+  \url{https://www.oreilly.com/radar/real-real-world-programming-with-chatgpt/},
+  July 25 2023.
+
+\bibitem{Loukides2023}
+Mike Loukides.
+\newblock Real world programming with chatgpt.
+\newblock
+  \url{https://www.oreilly.com/radar/real-world-programming-with-chatgpt/},
+  April 25 2023.
+
+\end{thebibliography}
