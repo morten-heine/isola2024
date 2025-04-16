@@ -2,17 +2,21 @@
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \begin{document}
-\title{Scaling Real-World Programming with ChatGPT\\ 2 Years later}
+\title{Scaling Real-World Programming with GenAI\\ 2 Years later}
 \author{Morten Heine Sørensen\
 \institute{Formalit, \email{mhs@formalit.dk}}}
 \authorrunning{M. H. Sørensen}
 \maketitle              % typeset the header of the contribution
 
 \begin{abstract}
- The software development community is discussing how ChatGPT and related new AI-technologies can help developers. Day by day, new examples, experiments and experiences emerge. Most authors acknowledge ChatGPT as a useful tool that improves productivity, but they also point out limitations and suggest that ChatGPT belongs in the useful tool category, not the new era category.
+ November 30, 2022, ChatGPT 3.5 was released (soon followed by ChatGPT 4), in what may have been the biggest step forward so far in the history of Artificial Intelligence.
+ The software development community soon started prompting ChatGPT for assistance with various software engineering related tasks, e.g., bug fixing, code review and code generation. From the the beginning and to this day, the community have been divided into various camps, with some authors claiming GenAI will replace human developers, and others seeing the idea as ridiculous.
 
- On the other hand, there are reports on LinkedIn about developers able to do the work of multiple persons in parallel using ChatGPT. In this paper we argue that this is indeed a new era and suggest a productivity improvement of a factor 2 to 5. We report on several experiments we did, resulting in 25 lessons learned which we believe support the claim, and outline the approach we have created along the way.
-\keywords{ChatGPT \and Programming \and AI \and Software Development}
+ This paper is a sequel to our 2023 manuscript on Scaling Real-World Programming with ChatGPT\cite{Sorm2023} in which we argued that ChatGPT indeed started is a new era in software development which can boost the productivity of a competent developer by a factor of 2 to 5.
+ 
+What has changed in the meantime, other than the appearance of new models like Claude and DeepSeek, and new varieties of the models, is that a range of so-called {\em agentic\/} tools have been released, e.g., Cursor, GitHub Copilot, Devin, which take the automation to the next level. Nevertheless, the approach we outlined in the 2023 paper for developing well-tested, maintainable production software is still valid and can be further boosted by the new tools. The purpose of this paper is to show how by a combination of examples and principles.
+
+\keywords{LLM \and Cursor \and GitHub Copilot \and Devin \and Programming \and GenAI \and Software Development}
 \end{abstract}
 %
 %
@@ -713,4 +717,9 @@ A revolution in software development has started. Are organizations ready to ado
 \bibliography{references}
 \bibliographystyle{plain} 
 \end{document}
+
+- Python example
+- Transactions validation MS Powershell
+- Peptide identification in Python
+- ECAI tutorial
 

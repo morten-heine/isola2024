@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.4.5)  16 APR 2025 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.4.5)  16 APR 2025 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -230,10 +230,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 9.
 
-Overfull \hbox (3.3161pt too wide) in paragraph at lines 12--13
-[]\T1/cmr/m/n/9 The soft-ware de-vel-op-ment com-mu-nity is dis-cussing how Cha
-t-
- []
+
+LaTeX Warning: Citation `Sorm2023' on page 1 undefined on input line 15.
 
 
 
@@ -470,10 +468,13 @@ pdfTeX warning: pdflatex (file /usr/local/texlive/2024basic/texmf-var/fonts/map
 [5]
 
 [6]
-Overfull \hbox (3.87775pt too wide) in paragraph at lines 170--172
+Overfull \hbox (3.87775pt too wide) in paragraph at lines 174--176
 []\T1/cmr/m/n/10 We there-fore pre-fer to tap into the de-vel-oper's fine- grai
 ned pro-cess of progress.
  []
+
+
+Underfull \vbox (badness 4303) has occurred while \output is active []
 
 
 
@@ -496,320 +497,323 @@ ned pro-cess of progress.
 [15]
 
 [16]
-<Pictures/Picture1.jpg, id=62, 337.26pt x 376.40625pt>
+<Pictures/Picture1.jpg, id=63, 337.26pt x 376.40625pt>
 File: Pictures/Picture1.jpg Graphic file (type jpg)
 <use Pictures/Picture1.jpg>
-Package pdftex.def Info: Pictures/Picture1.jpg  used on input line 474.
+Package pdftex.def Info: Pictures/Picture1.jpg  used on input line 478.
 (pdftex.def)             Requested size: 173.56177pt x 193.71066pt.
-<Pictures/Picture2.jpg, id=63, 358.33875pt x 134.5025pt>
+<Pictures/Picture2.jpg, id=64, 358.33875pt x 134.5025pt>
 File: Pictures/Picture2.jpg Graphic file (type jpg)
 <use Pictures/Picture2.jpg>
-Package pdftex.def Info: Pictures/Picture2.jpg  used on input line 480.
+Package pdftex.def Info: Pictures/Picture2.jpg  used on input line 484.
 (pdftex.def)             Requested size: 173.56177pt x 65.14742pt.
-<Pictures/Picture3.jpg, id=64, 738.76pt x 361.35pt>
-File: Pictures/Picture3.jpg Graphic file (type jpg)
-<use Pictures/Picture3.jpg>
-Package pdftex.def Info: Pictures/Picture3.jpg  used on input line 486.
-(pdftex.def)             Requested size: 173.56177pt x 84.8952pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture4.jpg, id=65, 481.8pt x 166.6225pt>
+<Pictures/Picture3.jpg, id=65, 738.76pt x 361.35pt>
+File: Pictures/Picture3.jpg Graphic file (type jpg)
+<use Pictures/Picture3.jpg>
+Package pdftex.def Info: Pictures/Picture3.jpg  used on input line 490.
+(pdftex.def)             Requested size: 173.56177pt x 84.8952pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Pictures/Picture4.jpg, id=66, 481.8pt x 166.6225pt>
 File: Pictures/Picture4.jpg Graphic file (type jpg)
 <use Pictures/Picture4.jpg>
-Package pdftex.def Info: Pictures/Picture4.jpg  used on input line 492.
+Package pdftex.def Info: Pictures/Picture4.jpg  used on input line 496.
 (pdftex.def)             Requested size: 173.56177pt x 60.02219pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture5.jpg, id=66, 738.76pt x 646.415pt>
+<Pictures/Picture5.jpg, id=67, 738.76pt x 646.415pt>
 File: Pictures/Picture5.jpg Graphic file (type jpg)
 <use Pictures/Picture5.jpg>
-Package pdftex.def Info: Pictures/Picture5.jpg  used on input line 498.
+Package pdftex.def Info: Pictures/Picture5.jpg  used on input line 502.
 (pdftex.def)             Requested size: 173.56177pt x 151.86809pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture6.jpg, id=67, 750.805pt x 288.07625pt>
+<Pictures/Picture6.jpg, id=68, 750.805pt x 288.07625pt>
 File: Pictures/Picture6.jpg Graphic file (type jpg)
 <use Pictures/Picture6.jpg>
-Package pdftex.def Info: Pictures/Picture6.jpg  used on input line 504.
+Package pdftex.def Info: Pictures/Picture6.jpg  used on input line 508.
 (pdftex.def)             Requested size: 173.56177pt x 66.59021pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture7.jpg, id=68, 726.715pt x 879.285pt>
+<Pictures/Picture7.jpg, id=69, 726.715pt x 879.285pt>
 File: Pictures/Picture7.jpg Graphic file (type jpg)
 <use Pictures/Picture7.jpg>
-Package pdftex.def Info: Pictures/Picture7.jpg  used on input line 510.
+Package pdftex.def Info: Pictures/Picture7.jpg  used on input line 514.
 (pdftex.def)             Requested size: 173.56177pt x 209.99962pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture8.jpg, id=69, 741.77126pt x 956.57375pt>
+<Pictures/Picture8.jpg, id=70, 741.77126pt x 956.57375pt>
 File: Pictures/Picture8.jpg Graphic file (type jpg)
 <use Pictures/Picture8.jpg>
-Package pdftex.def Info: Pictures/Picture8.jpg  used on input line 516.
+Package pdftex.def Info: Pictures/Picture8.jpg  used on input line 520.
 (pdftex.def)             Requested size: 173.56177pt x 223.81693pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture9.jpg, id=70, 741.77126pt x 616.3025pt>
+<Pictures/Picture9.jpg, id=71, 741.77126pt x 616.3025pt>
 File: Pictures/Picture9.jpg Graphic file (type jpg)
 <use Pictures/Picture9.jpg>
-Package pdftex.def Info: Pictures/Picture9.jpg  used on input line 522.
+Package pdftex.def Info: Pictures/Picture9.jpg  used on input line 526.
 (pdftex.def)             Requested size: 173.56177pt x 144.20103pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture10.jpg, id=71, 481.8pt x 82.3075pt>
+<Pictures/Picture10.jpg, id=72, 481.8pt x 82.3075pt>
 File: Pictures/Picture10.jpg Graphic file (type jpg)
 <use Pictures/Picture10.jpg>
-Package pdftex.def Info: Pictures/Picture10.jpg  used on input line 528.
+Package pdftex.def Info: Pictures/Picture10.jpg  used on input line 532.
 (pdftex.def)             Requested size: 173.56177pt x 29.6495pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture11.jpg, id=72, 481.8pt x 216.81pt>
+<Pictures/Picture11.jpg, id=73, 481.8pt x 216.81pt>
 File: Pictures/Picture11.jpg Graphic file (type jpg)
 <use Pictures/Picture11.jpg>
-Package pdftex.def Info: Pictures/Picture11.jpg  used on input line 534.
+Package pdftex.def Info: Pictures/Picture11.jpg  used on input line 538.
 (pdftex.def)             Requested size: 173.56177pt x 78.10115pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture12.jpg, id=73, 481.8pt x 108.405pt>
+<Pictures/Picture12.jpg, id=74, 481.8pt x 108.405pt>
 File: Pictures/Picture12.jpg Graphic file (type jpg)
 <use Pictures/Picture12.jpg>
-Package pdftex.def Info: Pictures/Picture12.jpg  used on input line 540.
+Package pdftex.def Info: Pictures/Picture12.jpg  used on input line 544.
 (pdftex.def)             Requested size: 173.56177pt x 39.05057pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture13.jpg, id=74, 759.83875pt x 750.805pt>
+<Pictures/Picture13.jpg, id=75, 759.83875pt x 750.805pt>
 File: Pictures/Picture13.jpg Graphic file (type jpg)
 <use Pictures/Picture13.jpg>
-Package pdftex.def Info: Pictures/Picture13.jpg  used on input line 546.
+Package pdftex.def Info: Pictures/Picture13.jpg  used on input line 550.
 (pdftex.def)             Requested size: 173.56177pt x 171.49005pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture14.jpg, id=75, 738.76pt x 658.46pt>
+<Pictures/Picture14.jpg, id=76, 738.76pt x 658.46pt>
 File: Pictures/Picture14.jpg Graphic file (type jpg)
 <use Pictures/Picture14.jpg>
-Package pdftex.def Info: Pictures/Picture14.jpg  used on input line 552.
+Package pdftex.def Info: Pictures/Picture14.jpg  used on input line 556.
 (pdftex.def)             Requested size: 173.56177pt x 154.69794pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture15.jpg, id=76, 738.76pt x 119.44624pt>
+<Pictures/Picture15.jpg, id=77, 738.76pt x 119.44624pt>
 File: Pictures/Picture15.jpg Graphic file (type jpg)
 <use Pictures/Picture15.jpg>
-Package pdftex.def Info: Pictures/Picture15.jpg  used on input line 558.
+Package pdftex.def Info: Pictures/Picture15.jpg  used on input line 562.
 (pdftex.def)             Requested size: 173.56177pt x 28.06258pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture16.jpg, id=77, 481.8pt x 44.165pt>
+<Pictures/Picture16.jpg, id=78, 481.8pt x 44.165pt>
 File: Pictures/Picture16.jpg Graphic file (type jpg)
 <use Pictures/Picture16.jpg>
-Package pdftex.def Info: Pictures/Picture16.jpg  used on input line 564.
+Package pdftex.def Info: Pictures/Picture16.jpg  used on input line 568.
 (pdftex.def)             Requested size: 173.56177pt x 15.90948pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture17.jpg, id=78, 683.55376pt x 1265.72874pt>
+<Pictures/Picture17.jpg, id=79, 683.55376pt x 1265.72874pt>
 File: Pictures/Picture17.jpg Graphic file (type jpg)
 <use Pictures/Picture17.jpg>
-Package pdftex.def Info: Pictures/Picture17.jpg  used on input line 570.
+Package pdftex.def Info: Pictures/Picture17.jpg  used on input line 574.
 (pdftex.def)             Requested size: 173.56177pt x 321.37566pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture18.jpg, id=79, 677.53125pt x 744.7825pt>
+<Pictures/Picture18.jpg, id=80, 677.53125pt x 744.7825pt>
 File: Pictures/Picture18.jpg Graphic file (type jpg)
 <use Pictures/Picture18.jpg>
-Package pdftex.def Info: Pictures/Picture18.jpg  used on input line 576.
+Package pdftex.def Info: Pictures/Picture18.jpg  used on input line 580.
 (pdftex.def)             Requested size: 173.56177pt x 190.7864pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture19.jpg, id=80, 481.8pt x 100.375pt>
+<Pictures/Picture19.jpg, id=81, 481.8pt x 100.375pt>
 File: Pictures/Picture19.jpg Graphic file (type jpg)
 <use Pictures/Picture19.jpg>
-Package pdftex.def Info: Pictures/Picture19.jpg  used on input line 582.
+Package pdftex.def Info: Pictures/Picture19.jpg  used on input line 586.
 (pdftex.def)             Requested size: 173.56177pt x 36.15793pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture20.jpg, id=81, 427.5975pt x 1166.3575pt>
+<Pictures/Picture20.jpg, id=82, 427.5975pt x 1166.3575pt>
 File: Pictures/Picture20.jpg Graphic file (type jpg)
 <use Pictures/Picture20.jpg>
-Package pdftex.def Info: Pictures/Picture20.jpg  used on input line 588.
+Package pdftex.def Info: Pictures/Picture20.jpg  used on input line 592.
 (pdftex.def)             Requested size: 173.56177pt x 473.42224pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture21.jpg, id=82, 741.77126pt x 331.2375pt>
+<Pictures/Picture21.jpg, id=83, 741.77126pt x 331.2375pt>
 File: Pictures/Picture21.jpg Graphic file (type jpg)
 <use Pictures/Picture21.jpg>
-Package pdftex.def Info: Pictures/Picture21.jpg  used on input line 594.
+Package pdftex.def Info: Pictures/Picture21.jpg  used on input line 598.
 (pdftex.def)             Requested size: 173.56177pt x 77.50218pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture22.jpg, id=83, 481.8pt x 993.7125pt>
+<Pictures/Picture22.jpg, id=84, 481.8pt x 993.7125pt>
 File: Pictures/Picture22.jpg Graphic file (type jpg)
 <use Pictures/Picture22.jpg>
-Package pdftex.def Info: Pictures/Picture22.jpg  used on input line 600.
+Package pdftex.def Info: Pictures/Picture22.jpg  used on input line 604.
 (pdftex.def)             Requested size: 173.56177pt x 357.96367pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture23.jpg, id=84, 445.665pt x 449.68pt>
+<Pictures/Picture23.jpg, id=85, 445.665pt x 449.68pt>
 File: Pictures/Picture23.jpg Graphic file (type jpg)
 <use Pictures/Picture23.jpg>
-Package pdftex.def Info: Pictures/Picture23.jpg  used on input line 606.
+Package pdftex.def Info: Pictures/Picture23.jpg  used on input line 610.
 (pdftex.def)             Requested size: 173.56177pt x 175.12747pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture24.jpg, id=85, 481.8pt x 48.18pt>
+<Pictures/Picture24.jpg, id=86, 481.8pt x 48.18pt>
 File: Pictures/Picture24.jpg Graphic file (type jpg)
 <use Pictures/Picture24.jpg>
-Package pdftex.def Info: Pictures/Picture24.jpg  used on input line 612.
+Package pdftex.def Info: Pictures/Picture24.jpg  used on input line 616.
 (pdftex.def)             Requested size: 173.56177pt x 17.3558pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture25.jpg, id=86, 445.665pt x 728.7225pt>
+<Pictures/Picture25.jpg, id=87, 445.665pt x 728.7225pt>
 File: Pictures/Picture25.jpg Graphic file (type jpg)
 <use Pictures/Picture25.jpg>
-Package pdftex.def Info: Pictures/Picture25.jpg  used on input line 618.
+Package pdftex.def Info: Pictures/Picture25.jpg  used on input line 622.
 (pdftex.def)             Requested size: 173.56177pt x 283.80032pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture26.jpg, id=87, 481.8pt x 76.285pt>
+<Pictures/Picture26.jpg, id=88, 481.8pt x 76.285pt>
 File: Pictures/Picture26.jpg Graphic file (type jpg)
 <use Pictures/Picture26.jpg>
-Package pdftex.def Info: Pictures/Picture26.jpg  used on input line 624.
+Package pdftex.def Info: Pictures/Picture26.jpg  used on input line 628.
 (pdftex.def)             Requested size: 173.56177pt x 27.48003pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture27.jpg, id=88, 481.8pt x 1013.7875pt>
+<Pictures/Picture27.jpg, id=89, 481.8pt x 1013.7875pt>
 File: Pictures/Picture27.jpg Graphic file (type jpg)
 <use Pictures/Picture27.jpg>
-Package pdftex.def Info: Pictures/Picture27.jpg  used on input line 630.
+Package pdftex.def Info: Pictures/Picture27.jpg  used on input line 634.
 (pdftex.def)             Requested size: 173.56177pt x 365.19527pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture28.jpg, id=89, 429.605pt x 1336.995pt>
+<Pictures/Picture28.jpg, id=90, 429.605pt x 1336.995pt>
 File: Pictures/Picture28.jpg Graphic file (type jpg)
 <use Pictures/Picture28.jpg>
-Package pdftex.def Info: Pictures/Picture28.jpg  used on input line 636.
+Package pdftex.def Info: Pictures/Picture28.jpg  used on input line 640.
 (pdftex.def)             Requested size: 173.56177pt x 540.15396pt.
 
-LaTeX Warning: Float too large for page by 13.76526pt on input line 639.
+LaTeX Warning: Float too large for page by 13.76526pt on input line 643.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture29.jpg, id=90, 741.77126pt x 97.36375pt>
+<Pictures/Picture29.jpg, id=91, 741.77126pt x 97.36375pt>
 File: Pictures/Picture29.jpg Graphic file (type jpg)
 <use Pictures/Picture29.jpg>
-Package pdftex.def Info: Pictures/Picture29.jpg  used on input line 642.
+Package pdftex.def Info: Pictures/Picture29.jpg  used on input line 646.
 (pdftex.def)             Requested size: 173.56177pt x 22.78093pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture30.jpg, id=91, 481.8pt x 807.015pt>
+<Pictures/Picture30.jpg, id=92, 481.8pt x 807.015pt>
 File: Pictures/Picture30.jpg Graphic file (type jpg)
 <use Pictures/Picture30.jpg>
-Package pdftex.def Info: Pictures/Picture30.jpg  used on input line 648.
+Package pdftex.def Info: Pictures/Picture30.jpg  used on input line 652.
 (pdftex.def)             Requested size: 173.56177pt x 290.70988pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture31.jpg, id=92, 483.8075pt x 112.42pt>
+<Pictures/Picture31.jpg, id=93, 483.8075pt x 112.42pt>
 File: Pictures/Picture31.jpg Graphic file (type jpg)
 <use Pictures/Picture31.jpg>
-Package pdftex.def Info: Pictures/Picture31.jpg  used on input line 654.
+Package pdftex.def Info: Pictures/Picture31.jpg  used on input line 658.
 (pdftex.def)             Requested size: 173.56177pt x 40.32878pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture31a.jpg, id=93, 723.70375pt x 511.9125pt>
+<Pictures/Picture31a.jpg, id=94, 723.70375pt x 511.9125pt>
 File: Pictures/Picture31a.jpg Graphic file (type jpg)
 <use Pictures/Picture31a.jpg>
-Package pdftex.def Info: Pictures/Picture31a.jpg  used on input line 660.
+Package pdftex.def Info: Pictures/Picture31a.jpg  used on input line 664.
 (pdftex.def)             Requested size: 173.56177pt x 122.76778pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture32.jpg, id=94, 481.8pt x 1013.7875pt>
+<Pictures/Picture32.jpg, id=95, 481.8pt x 1013.7875pt>
 File: Pictures/Picture32.jpg Graphic file (type jpg)
 <use Pictures/Picture32.jpg>
-Package pdftex.def Info: Pictures/Picture32.jpg  used on input line 666.
+Package pdftex.def Info: Pictures/Picture32.jpg  used on input line 670.
 (pdftex.def)             Requested size: 173.56177pt x 365.19527pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture33.jpg, id=95, 662.475pt x 483.8075pt>
+<Pictures/Picture33.jpg, id=96, 662.475pt x 483.8075pt>
 File: Pictures/Picture33.jpg Graphic file (type jpg)
 <use Pictures/Picture33.jpg>
-Package pdftex.def Info: Pictures/Picture33.jpg  used on input line 672.
+Package pdftex.def Info: Pictures/Picture33.jpg  used on input line 676.
 (pdftex.def)             Requested size: 173.56177pt x 126.74667pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture34.jpg, id=96, 529.98pt x 784.9325pt>
+<Pictures/Picture34.jpg, id=97, 529.98pt x 784.9325pt>
 File: Pictures/Picture34.jpg Graphic file (type jpg)
 <use Pictures/Picture34.jpg>
-Package pdftex.def Info: Pictures/Picture34.jpg  used on input line 678.
+Package pdftex.def Info: Pictures/Picture34.jpg  used on input line 682.
 (pdftex.def)             Requested size: 173.56177pt x 257.05229pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture35.jpg, id=97, 520.94624pt x 689.57625pt>
+<Pictures/Picture35.jpg, id=98, 520.94624pt x 689.57625pt>
 File: Pictures/Picture35.jpg Graphic file (type jpg)
 <use Pictures/Picture35.jpg>
-Package pdftex.def Info: Pictures/Picture35.jpg  used on input line 684.
+Package pdftex.def Info: Pictures/Picture35.jpg  used on input line 688.
 (pdftex.def)             Requested size: 173.56177pt x 229.73892pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture36.jpg, id=98, 717.68124pt x 1210.5225pt>
+<Pictures/Picture36.jpg, id=99, 717.68124pt x 1210.5225pt>
 File: Pictures/Picture36.jpg Graphic file (type jpg)
 <use Pictures/Picture36.jpg>
-Package pdftex.def Info: Pictures/Picture36.jpg  used on input line 690.
+Package pdftex.def Info: Pictures/Picture36.jpg  used on input line 694.
 (pdftex.def)             Requested size: 173.56177pt x 292.74786pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture37.jpg, id=99, 738.76pt x 483.8075pt>
+<Pictures/Picture37.jpg, id=100, 738.76pt x 483.8075pt>
 File: Pictures/Picture37.jpg Graphic file (type jpg)
 <use Pictures/Picture37.jpg>
-Package pdftex.def Info: Pictures/Picture37.jpg  used on input line 696.
+Package pdftex.def Info: Pictures/Picture37.jpg  used on input line 700.
 (pdftex.def)             Requested size: 173.56177pt x 113.66524pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture38.jpg, id=100, 496.85625pt x 492.84125pt>
+<Pictures/Picture38.jpg, id=101, 496.85625pt x 492.84125pt>
 File: Pictures/Picture38.jpg Graphic file (type jpg)
 <use Pictures/Picture38.jpg>
-Package pdftex.def Info: Pictures/Picture38.jpg  used on input line 702.
+Package pdftex.def Info: Pictures/Picture38.jpg  used on input line 706.
 (pdftex.def)             Requested size: 173.56177pt x 172.1586pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Pictures/Picture39.jpg, id=101, 741.77126pt x 486.81876pt>
+<Pictures/Picture39.jpg, id=102, 741.77126pt x 486.81876pt>
 File: Pictures/Picture39.jpg Graphic file (type jpg)
 <use Pictures/Picture39.jpg>
-Package pdftex.def Info: Pictures/Picture39.jpg  used on input line 708.
+Package pdftex.def Info: Pictures/Picture39.jpg  used on input line 712.
 (pdftex.def)             Requested size: 173.56177pt x 113.90472pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -821,14 +825,14 @@ g.
  []
 
 
+
+[17 <./Pictures/Picture1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--15
 []\T1/cmr/m/n/9 Danusha Navod Gam-age.  7 ways chat-gpt can help de-vel-op-ers.
 
  []
 
 
-
-[17 <./Pictures/Picture1.jpg> <./Pictures/Picture2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 17--22
 []\T1/cmr/m/n/9 David Gewirtz.  How to use chat-gpt to write code.
  []
@@ -855,21 +859,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--36
 /, April
  []
 
+
+Underfull \hbox (badness 1102) in paragraph at lines 38--43
+[]\T1/cmr/m/n/9 Morten Heine Sørensen and Mark Hissink Muller.  Scal-ing real-w
+orld pro-
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 38--43
+\T1/cmr/m/n/9 gram-ming with chat-gpt.  Un-pub-lished manuscript. https://githu
+b.com/mhs-
+ []
+
 )
 
-[18 <./Pictures/Picture3.jpg> <./Pictures/Picture4.jpg>]
+[18 <./Pictures/Picture2.jpg> <./Pictures/Picture3.jpg>]
 
-[19 <./Pictures/Picture5.jpg> <./Pictures/Picture6.jpg> <./Pictures/Picture7.jp
+[19 <./Pictures/Picture4.jpg> <./Pictures/Picture5.jpg> <./Pictures/Picture6.jp
 g>]
 
-[20 <./Pictures/Picture8.jpg> <./Pictures/Picture9.jpg> <./Pictures/Picture10.j
-pg>]
+[20 <./Pictures/Picture7.jpg> <./Pictures/Picture8.jpg>]
 
-[21 <./Pictures/Picture11.jpg> <./Pictures/Picture12.jpg> <./Pictures/Picture13
-.jpg>]
+[21 <./Pictures/Picture9.jpg> <./Pictures/Picture10.jpg> <./Pictures/Picture11.
+jpg> <./Pictures/Picture12.jpg>]
 
-[22 <./Pictures/Picture14.jpg> <./Pictures/Picture15.jpg> <./Pictures/Picture16
-.jpg>]
+[22 <./Pictures/Picture13.jpg> <./Pictures/Picture14.jpg> <./Pictures/Picture15
+.jpg> <./Pictures/Picture16.jpg>]
 
 [23 <./Pictures/Picture17.jpg>]
 
@@ -903,32 +918,37 @@ pg>]
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2342 strings out of 474663
- 38571 string characters out of 5750970
- 431533 words of memory out of 5000000
- 25402 multiletter control sequences out of 15000+600000
- 565985 words of font info for 47 fonts, out of 8000000 for 9000
+ 2345 strings out of 474663
+ 38602 string characters out of 5750970
+ 434596 words of memory out of 5000000
+ 25404 multiletter control sequences out of 15000+600000
+ 566671 words of font info for 48 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 57i,7n,65p,568b,309s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,584b,311s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/mortenheinesorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljf
 our/jknappen/ec/tcrm1000.600pk> </Users/mortenheinesorensen/Library/texlive/202
 4basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1000.600pk> </Users/mortenhein
 esorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1
 200.600pk> </Users/mortenheinesorensen/Library/texlive/2024basic/texmf-var/font
 s/pk/ljfour/jknappen/ec/tcrm0900.600pk> </Users/mortenheinesorensen/Library/tex
-live/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </Users/mo
+live/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0900.600pk> </Users/mo
 rtenheinesorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ectt0900.600pk> </Users/mortenheinesorensen/Library/texlive/2024basic/texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </Users/mortenheinesorensen/Lib
-rary/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </
+ec/ecbx0900.600pk> </Users/mortenheinesorensen/Library/texlive/2024basic/texmf-
+var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/mortenheinesorensen/Lib
+rary/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </
 Users/mortenheinesorensen/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecbx1440.600pk>
-Output written on isola2024.pdf (36 pages, 2293898 bytes).
+knappen/ec/ecrm1000.600pk> </Users/mortenheinesorensen/Library/texlive/2024basi
+c/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk>
+Output written on isola2024.pdf (36 pages, 2298142 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
+ 496 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
