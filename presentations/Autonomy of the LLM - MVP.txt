@@ -1,0 +1,41 @@
+MVP 
+===
+
+APIs
+1. Call Jira API
+2. Call Open AI API
+3. Link to new Git Repo
+
+Environment initially locally
+4. UI
+5. API
+6. DB
+7. Google Drive
+
+Use cases
+8. Empty application
+9. Read branch and thread from Ticket
+10. Check out main
+11. Pull
+12. Create branch
+13. Create thread
+14. Get Commands from AI
+15. Get Test from AI
+16. Get Code from AI
+17. Run Commands
+18. Create/Update/delete files
+19. Commit changes
+20. Run build UI/BE/DB
+21. Run Regression test
+22. Push changes
+23. Create change request
+24. Assign Ticket
+25. Extract Build error and loop
+26. Extract Test error and loop
+27. Manual work around
+
+Container
+28. Azure Cloud?
+29. work on ticket 
+
+
