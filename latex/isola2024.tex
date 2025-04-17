@@ -1,98 +1,63 @@
 \documentclass[runningheads]{llncs}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage{subcaption}
+\newcommand{\mybox}[1]{\vspace{1em}\noindent\fbox{\parbox{\textwidth}{#1}}\vspace{1em}}
 \begin{document}
-\title{Scaling Real-World Programming with GenAI\\ 2 Years later}
-\author{Morten Heine Sørensen\
-\institute{Formalit, \email{mhs@formalit.dk}}}
-\authorrunning{M. H. Sørensen}
-\maketitle              % typeset the header of the contribution
-
+\title{GenAI 2 Years Later: Vibe Coding, Good or Bad?}
+\author{
+  Morten Heine Sørensen\inst{1} \and
+  Mark Hissink Muller\inst{2}
+}
+\institute{
+  Formalit, \email{mhs@formalit.dk} \and
+  MHM Consult, \email{mark@mhmconsult.dk}
+}
+\maketitle
 \begin{abstract}
- November 30, 2022, ChatGPT 3.5 was released (soon followed by ChatGPT 4), in what may have been the biggest step forward so far in the history of Artificial Intelligence.
- The software development community soon started prompting ChatGPT for assistance with various software engineering related tasks, e.g., bug fixing, code review and code generation. From the the beginning and to this day, the community have been divided into various camps, with some authors claiming GenAI will replace human developers, and others seeing the idea as ridiculous.
+A new era of GenAI arose late 2022, when ChatGPT3.5 was released.
+Software developers soon prompted it to fix bugs and generate code.
+But opinions varied; some predicted GenAI will replace developers, others discouraged the use of GenAI.
+We suggested~\cite{Sorm2023} an approach to boost developer productivity and demonstrated it by a POC.
 
- This paper is a sequel to our 2023 manuscript on Scaling Real-World Programming with ChatGPT\cite{Sorm2023} in which we argued that ChatGPT indeed started is a new era in software development which can boost the productivity of a competent developer by a factor of 2 to 5.
- 
-What has changed in the meantime, other than the appearance of new models like Claude and DeepSeek, and new varieties of the models, is that a range of so-called {\em agentic\/} tools have been released, e.g., Cursor, GitHub Copilot, Devin, which take the automation to the next level. Nevertheless, the approach we outlined in the 2023 paper for developing well-tested, maintainable production software is still valid and can be further boosted by the new tools. The purpose of this paper is to show how by a combination of examples and principles.
+In the mean time, new models from various vendors emerged, and so did a set of {\em agentic\/} IDEs, which take automation to the next level. 
+The latter further boost the approach we outlined back then. 
 
-\keywords{LLM \and Cursor \and GitHub Copilot \and Devin \and Programming \and GenAI \and Software Development}
+In this paper we show how this works, it is nowadays called {\em vibe coding\/}, by a combination of principles and examples coming partly from the original POC and partly from subsequent daily work experience.
+
+\keywords{GenAI \and Agentic IDEs \and Programming \and Cursor \and ChatGPT}
 \end{abstract}
-%
-%
-%
-\section*{Background}
-We review some of the experiments already reported. Gamage\cite{Gamage2023} uses ChatGPT to generate code snippets (e.g., a React component), write test cases, and fix defects. He concludes that "ChatGPT's responses are not always 100\% accurate, so you need to do thorough research before using it for more advanced tasks." 
 
-Gewirtz\cite{Gewirtz2023a} uses ChatGPT to write a WordPress plugin. He also attempts to generate an entire application from an elaborate prompt of requirements. This results in a "flood of text and code," but "none of it was usable." He finds that "unless you're writing a very small function [...], ChatGPT isn't going to be able to write your final code." 
+\section{Introduction}
+We present an approach to developing full stack applications with agentic IDE and LLM. The developer chats with the IDE, which annotates and forwards the request to the LLM, receives the response, which is also shown to the developer, and turns it into changes of files in the file system and commands in the terminal.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Pictures/Picture1.jpg}
+    \end{subfigure}%
+    \begin{subfigure}{0.38\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Pictures/Picture2.jpg}
+    \end{subfigure}
+    \caption{UI of the Todo-application}
+    \label{fig:todo}
+\end{figure}
 
-Another attempt at developing a full application is due to Guo\cite{Guo2023} who develops part of a browser plugin to play music that matches the publication date of various research papers. He uses ChatGPT to do the initial setup of a Chrome extension, and notices that "wrestling with all these finicky details [...] before I could begin any real coding felt like death by a thousand cuts." Having overcome this, he co-designs the application with ChatGPT as a "UX design consultant." 
-
-Finally, he proceeds to link the extension with the Spotify API and comments that "the gold standard here is an expert human programmer who has a lot of experience with the Spotify API and who is good at teaching novices. ChatGPT was alright for getting me started but ultimately didn't meet this standard" due to lack of context, bird's eye view, tacit knowledge and looking ahead.
-
-For a last example, Fowler\cite{Fowler2023} comments on development where Xu Hao adds an awareness feature to an existing Online Whiteboard application based on React [3]. He begins with a detailed description of the existing system, its tech stack, implementation design, some patterns to be followed, the requirements for the new feature and asks ChatGPT for a plan for the implementation.
-
-ChatGPT responds with the plan, Xu Hao asks for the code for each step, to which ChatGPT responds with code.
-
-Fowler observes that the plan is useful to establish context when ChatGPT loses it and concludes that "it's useful to interact with the LLM like a junior partner, starting them with architectural guidelines, asking them to show their reasoning, and tweaking their outputs as we go."
-
-Loukides\cite{Loukides2023} comments that until the appearance of the Fowler paper, "I haven't seen anyone demonstrate what it takes to do professional development with ChatGPT."
-
-He speculates that the approach yields a "25 to 50 reduction in the time it would take to generate the code, not 90."
-
-He also comments that "after developing a significant application with ChatGPT, what do you have? A body of source code [...] that nobody understands in depth. [...] It's similar to software that was written 10 or 20 or 30 years ago, by a team whose members no longer work at the company, but that needs to be maintained, extended, and (still) debugged."
-
-In summary, results so far are promising, but do not report a revolution in how we develop software.
-%
-\section*{This Paper}
-In the paper we conversely argue that this marks the beginning of a new era. 
-
-We present an approach to developing full stack applications with ChatGPT, in a manner which we believe can drastically reduce the development time and cost by an estimated factor between 2 and 5. 
-
-The approach has been tried out with development of three realistic examples, which contain:
+\noindent The approach was originally tried out with ChatGPT in a POC where an application was developed from scratch up to production. The application manages todos~\cite{Freeman2013}, with the UI in Figure~\ref{fig:todo}.\footnote{See http://formalit.dk/portfolio.html for github links and presentation.}  The POC had these parts and steps:
 \begin{itemize}
-    \item UI built with React.
-    \item API built on Node.js or Java with Spring Boot.
-    \item Data layer with Postgres database.
+    \item UI built with React
+    \item API built in Javascript running on Node.js
+    \item Data layer with Postgres database
+    \item UI hosted as Azure static web app
+    \item API hosted as Azure app service
+    \item Code in GitHub
+    \item Automatic deployment on merge of each PR
 \end{itemize}
 
-In addition, devOps was covered this way:
-\begin{itemize}
-    \item UI hosted as Azure static web app.
-    \item API hosted as Azure app service.
-    \item Code in GitHub.
-    \item Automatic deployment on merge of each PR.
-\end{itemize}
+\noindent In later projects in our daily work we have used {\em Cursor} as the agentic IDE~\cite{Cursor_2023}. Some variants would be {\em Github CoPilot}~\cite{GitHubCopilot_2023} or {\em Devin}~\cite{Devin_2023}. In Cursor one can choose between various LLMs, we prefer GPT-4o~\cite{GPT40_2023}, some other options are some Claude~\cite{Claude_2023} and Gemini~\cite{Gemini_2023} models.
 
-In our first example, an application was developed from scratch up to production level quality in very short time. The resulting code is well-structured and can subsequently be maintained following the same approach, or by developers that have been part of the process.
-
-In the second example, an existing application with high quality was taken over by an experienced developer, who had limited experience with the technology stack, and the functionality was quickly changed to a different scope. 
-
-In a final third experiment the emphasis was on picture-perfect UI.
-
-We first explain the examples and the overall approach, then break it into smaller steps and aspects that can be followed one by one. Each of the sections summarize at least one important lesson that was learned when working with the examples, which may be of general interest.
-%
-\section{The Examples}
-We briefly review the examples, which were implemented using ChatGPT4 in June - July 2023.
-
-\subsection{Example 1}
-The first example is the Todo application extended with an additional page to write comments for a todo, extending the example with routing and state management across pages. 
-
-The focus of the example was to drastically reduce development time for the API based on Node.js and for a general structure for React applications dealing with state management, call-backs, calling APIs, etc. Aesthetics of the UI was not a priority. 
-
-Automatic API testing and UI testing (using Puppeteer) were used to validate code generated by ChatGPT.
-
-\subsection{Example 2}
-In the second example, an existing React application with a backend in Java was modified to incorporate several architectural and functional changes. Also, we delivered new end-to-end new application functionality using ChatGPT's help. 
-
-The goal of this example was to demonstrate how a developer with limited experience in React may quickly reach an acceptable productivity level. Also, the point was to show that ChatGPT may help maintain applications, not just develop them from scratch. 
-
-The resulting application is a multi-tenant social media application allowing people to be involved in the democratic process. 
-
-The application's entities are persisted using JPA in a Postgres database managed by Liquibase. REST APIs are implemented by a controller layer (where authentication is handled and access is restricted by role), which accesses core services that contain the business logic, which in turn access repositories that are responsible for data access, in a way common for a Spring Boot application. The application leverages a bean mapper component to limit the entity properties exposed via REST.
-
-\subsection{Example 3}
-In this example, the focus was on producing picture-perfect UI, i.e., styling with e.g., CSS, that would match an existing eCommerce application in production to show that also this aspect can be covered by ChatGPT.
+The remainder of the paper is organized as follows. We first explain the overall approach. The follow sections with the detailed steps of the approach, drawing examples of the use of LLM from the POC and the use of agentic IDE from in later experiences.  There is also a section with the details of the POC and one with details of later examples.
 
 \section{Overall Approach}
 The approach can be briefly explained as follows. Imagine you are senior lead developer for a team of, say, five developers, excluding yourself. The developers are junior, medio or senior and front-end, back-end or full-stack developers.
@@ -103,34 +68,33 @@ Also imagine that the application has a skeleton which expresses how to deal con
 
 From this point on you delegate features to the developers. You review each pull request (PR) from each developer, possibly asking for revision of the code, e.g., to ensure consistency and completeness. After approving PRs, the API test and UI tests are automatically run and any errors are identified and communicated to the developers, who will fix them and start another cycle of the loop. The tests are extended by the developers to cover their new functionality.
 
-Now take away the five developers and add ChatGPT instead (don't worry, they return later in the paper). The prompts correspond to the delegation to developers, and the generated answers make up the PRs.
+Now imagine ChatGPT acting as each developer. The prompts correspond to the delegation to developers, and the generated answers make up the PRs. Finally realize that Cursor handles the communication with ChatGPT and implements the actual PRs by updating your files and issuing terminal commands for running the build, committing and pushing to github, etc.
 
-In the following sections we go into more details with the approach by outlining individual steps and aspects.
+The different steps of the approach are explained in the following sections.
 
 \section{Set Up The Project}
-\textbf{LESSON 1:} ChatGPT can provide tutorials on how to accomplish tasks that are tailored to your specific application, making them very easy and fast to use.
+This step is usually required only once for a range of sprints leading to one or more applications in the same company, so it does not have to be super-efficient. Nevertheless, ChatGPT can create a step by step instruction on how to set up the project and Cursor can actually do the steps.
 
-In any event, this step is usually required only once for a range of sprints leading to one or more applications in the same company, so it does not have to be super-efficient.
+\mybox{\textbf{Lesson 1:} ChatGPT can provide tutorials tailored to your application on how to accomplish any tasks. Cursor can actually do the steps on your laptop.}
 
-The local development environment must be efficient to work with because it is crucial to have a fast loop of getting pull requests from ChatGPT, testing them with the UI and API tests, and identifying and fixing issues.
+\noindent The local development environment must be efficient to work with because it is crucial to have a fast loop of getting pull requests from ChatGPT, and letting cursor run the  UI and API tests and identify and fix issues.
 
-In Example 1, we used a mixture of ChatGPT and [1] to provide basic setup of IDE and project files. There were a couple of issues with versions and dependencies, but they were not difficult to fix. We set up the code in a GitHub repository, which made it easy to backtrack when ChatGPT produced undesirable code.
+\noindent In the POC, we used a mixture of ChatGPT and \cite{Freeman2013} to provide basic setup of IDE and project files. There were a couple of issues with versions and dependencies, but they were not difficult to fix. We set up the code in a GitHub repository, which made it easy to backtrack when ChatGPT produced undesirable code. In other examples, we have used Cursor to set up Python projects handling existing and new dependencies very efficiently.
 
-\textbf{LESSON 2:} Spend the time needed to set up the local development environment to efficiently support the iterations with ChatGPT. It does not matter if this take a bit more time than ideal since it will be a one-time cost.
+\mybox{\textbf{Lesson 2:} Set up the local development environment to efficiently support the iterations with ChatGPT and Cursor. It will be a one-time cost. Always begin with a GitHub repo to avoid loosing code by deletion or overwrites.}
 
 \section{Get Started With Development}
 Fowler\cite{Fowler2023} celebrates an approach, where you first communicate to ChatGPT an overall plan of steps that should be carried out before going into details.
 
 The way we see it, this plan may reside in the mind of the team lead, who delegates parts to the individual developers without each of them necessarily knowing the entire plan.
 
-For instance, for Example 1, we could start with the code to generate the relevant database tables, then create the needed API, and finally create the UI.
+For instance, for the POC, we could start with the code to generate the relevant database tables, then create the needed API, and finally create the UI.
 
 In fact, we recommend following the three steps in this order (DB, API, UI) for one feature, and then repeat them for each new feature. There are many reasons why this iterative development is a good idea in conventional projects without ChatGPT, and they carry over to the new way of developing software with ChatGPT. For instance, it avoids the useless code Gewirtz\cite{Gewirtz2023a} experienced.
 
-\textbf{LESSON 3:} Split the development into sprints and user stories, like you would with a team of developers. Then
-proceed sprint by sprint, user story by user story, for the same reasons as you normally do.
+\mybox{\textbf{Lesson 3:} Split the development into sprints and user stories, like you would with a team of developers. Then proceed sprint by sprint, user story by user story, for the same reasons as you normally do.}
 
-\textbf{LESSON 4:} In Sprint 1, establish the fundamental architecture of the application, for instance a UI layer, an API layer, and the DB layer developed well enough to cover a small feature. The fundamental architecture should not only align to functional and non-functional requirements, but also to the team size and team experience.
+\mybox{\textbf{Lesson 4:} In Sprint 1, establish the fundamental architecture of the application, for instance a UI layer, an API layer, and the DB layer developed well enough to cover a small feature. The architecture should not only align to functional and non-functional requirements, but also to the team size and  experience.}
 
 \section{Create The Data Model}
 In a conventional project we would recommend developing a feature by doing the UI and API simultaneously, because each aspect helps to validate the other and together, they deliver a complete feature. The DB part can probably be done by the API developer, both are part of a typical back-end profile's capabilities.
@@ -143,7 +107,7 @@ Some people recommend postponing the DB layer, for various reasons. For instance
 
 However, in our experience most applications have a data model, relational or otherwise, and understanding this model is the key to have a solid basis for the entire application.
 
-\textbf{LESSON 5:} Except for mock-ups, UI experimentation and hobby projects, most sprints should start by implementing the data model of the feature.
+\textbf{Lesson 5:} Except for mock-ups, UI experimentation and hobby projects, most sprints should start by implementing the data model of the feature.
 
 \section{Create The Api}
 Having created the necessary tables for a feature, you can proceed with the API.
@@ -151,7 +115,7 @@ Having created the necessary tables for a feature, you can proceed with the API.
 As mentioned, you should first generate a small part, verify what ChatGPT provides and make sure that it meets expectations. Although it is impressive how accurate and
 correct ChatGPT's answers often are, also in our experience, they are not flawless. Mistakes encountered include basic oversights (for which it always politely apologizes), but occasionally also more fundamental flaws that indicate that it completely misses the point.
 
-\textbf{LESSON 6:} ChatGPT's answers should be evaluated like they come from another (sometimes less experienced) person, rather than from a flawless machine. The human developer who integrates ChatGPT's responses into the application remains liable.
+\textbf{Lesson 6:} ChatGPT's answers should be evaluated like they come from another (sometimes less experienced) person, rather than from a flawless machine. The human developer who integrates ChatGPT's responses into the application remains liable.
 
 If you are not content with the results that ChatGPT provides, it is often advisable to iterate to get what you want. If you are confident that the code is correctly structured, you could go for the overall thing in a second round after the initial sprint and relevant follow-up shows that the code is functionality correct and well-structured.
 
@@ -160,9 +124,9 @@ Also, if you are delivering to a company that already has policies for how the c
 For instance, do you have multiple layers with controller, service, and repo, or less than that. In general, keep things as simple as possible. The fewer moving parts and the fewer proprietary add-ons that ChatGPT has no knowledge about, the easier it will be for ChatGPT to get it right. Besides, you can always get ChatGPT to rewrite the 
 files later if you decide.
 
-Remember the API is not just happy scenario, so provide instructions about error handling, return codes, etc. For instance, in Example 1, the API server could initially crash when there was some issue. So we asked ChatGPT to wrap each call in a try catch, and return 200 or 500 depending on whether an error was encountered or not. We should note that on several other interactions, ChatGPT actually suggested that error handling should be part of the implementation and provided examples of how to do it.
+Remember the API is not just happy scenario, so provide instructions about error handling, return codes, etc. For instance, in the POC, the API server could initially crash when there was some issue. So we asked ChatGPT to wrap each call in a try catch, and return 200 or 500 depending on whether an error was encountered or not. We should note that on several other interactions, ChatGPT actually suggested that error handling should be part of the implementation and provided examples of how to do it.
 
-\textbf{LESSON 7:} When starting the API, get a simple server running with a simple example and make sure you are happy with it to some level of maturity. There may be some production hardening missing that can be covered latter, but the basic structure should be correct and satisfactory.
+\textbf{Lesson 7:} When starting the API, get a simple server running with a simple example and make sure you are happy with it to some level of maturity. There may be some production hardening missing that can be covered latter, but the basic structure should be correct and satisfactory.
 
 \section{Create The Ui}
 Having established DB and API for the first sprint, proceed to the UI. This is where we see the largest difference working with ChatGPT, compared to the conventional approach.
@@ -176,18 +140,18 @@ Similarly, when we instruct ChatGPT, we first ask for a simple version of the pa
 
 This process helps keep to the code and the development process – here meaning the interaction with ChatGPT – under control. You get small parts, which can easily be validated and tested. In other words, we do not end up with legacy code, contrary to the claim of Loukides\cite{Loukides2023}.
 
-\textbf{LESSON 8:} When working with ChatGPT on User Interface, ask first for a simple version. Then add remaining controls one by one or in small groups.
+\textbf{Lesson 8:} When working with ChatGPT on User Interface, ask first for a simple version. Then add remaining controls one by one or in small groups.
 
 We will later discuss how we can scale the development of UI to a more efficient process where the UI is explained in a semi-formal way.
 
-\section{Intermezzo: Example 1 In Detail}
+\section{Intermezzo: the POC In Detail}
 In [1] the development of a Todo application proceeds from UI to API (contrary to our recommendation, but the book is about React, so it makes sense). Let's follow that path and see how ChatGPT works it out.
 
 We start with the standard React application obtained by running npx create-react-app todo, which was part of the project setup. After this, we ask ChatGPT to create the contents for the files we already have as dummy versions:
 
 When you ask ChatGPT to generate code he will often give you examples and leave to you to complete the details. However, it is much faster if ChatGPT simply does it all. So, we ask for full contents of the files.
 
-\textbf{LESSON 9:} Ask for full contents of files. It speeds up the process.
+\textbf{Lesson 9:} Ask for full contents of files. It speeds up the process.
 
 For the above request we get this response:
 
@@ -195,7 +159,7 @@ ChatGPT goes on with the contents of each file.
    
 Sometimes there can be slight imprecisions in ChatGPT's responses. For instance, about the name of entities, file locations, etc. That's why it's good to have a working dummy application where files are correctly named and stored in locations that are consistent.
 
-\textbf{LESSON 10:} When starting the interaction with ChatGPT, have a dummy application working.
+\textbf{Lesson 10:} When starting the interaction with ChatGPT, have a dummy application working.
 Next, we want to indicate whether todos are done.
 
 ChatGPT responds with the changes.
@@ -219,15 +183,15 @@ In this case we have this error. ChatGPT responds:
 
 The advice turns out to work. In general, such advice should be confirmed by checking with other sources. Although, code is contributed by ChatGPT, you should see yourself as liable for it. See [7] for more on this aspect and [6] for questions about copyright regarding the code. Also notice that confidential code or information should not be shared with ChatGPT as observed in [3].
   
-\textbf{LESSON 11:} ChatGPT may generate code with issues for various reasons, e.g., because we did not ask explicitly to avoid them or because he made an interpretation that is incorrect in our context. In such cases, simply ask for help; most of the time he will be able to (help) resolve the problem.
+\textbf{Lesson 11:} ChatGPT may generate code with issues for various reasons, e.g., because we did not ask explicitly to avoid them or because he made an interpretation that is incorrect in our context. In such cases, simply ask for help; most of the time he will be able to (help) resolve the problem.
 
 At this point, repeated testing reveals some new errors, ChatGPT replies with new versions where the errors are solved, and the ping-pong game continues for a little while until the code eventually works. Again, the trick is to get ChatGPT to do the work and keep providing the updated component in full, rather than to provide instructions for the developer to address these himself.
 
-\textbf{LESSON 12:} As mentioned, ChatGPT may generate code with errors but getting it to fix them is quicker than writing the code yourself, which may also introduce errors that may take time to find and resolve.
+\textbf{Lesson 12:} As mentioned, ChatGPT may generate code with errors but getting it to fix them is quicker than writing the code yourself, which may also introduce errors that may take time to find and resolve.
 
 Interestingly, at the end, the todo items are back in single list, rather than two different for done and undone. ChatGPT lost some context along the way in the new issues, as others have reported, and we had to get him back on track. Also, we had to instruct him that the API should be called to mark todo items done or not done.
 
-\textbf{LESSON 13:} ChatGPT may generate code with problems that were solved earlier in the dialog. You need to test what he returns at every step and ask errors to be fixed.
+\textbf{Lesson 13:} ChatGPT may generate code with problems that were solved earlier in the dialog. You need to test what he returns at every step and ask errors to be fixed.
 
 We will say more about automatic testing later. It's finally time to get the DB layer done.
 
@@ -239,18 +203,14 @@ Then follows some more ping-pong about
 • The user the API should connect to the DB with.
 • Handling "done" information in post endpoint.
 
-\textbf{LESSON 14:} Be as precise as you can in stating what you need from ChatGPT. Whenever you omit details, ChatGPT may do something else than you expect.
+\textbf{Lesson 14:} Be as precise as you can in stating what you need from ChatGPT. Whenever you omit details, ChatGPT may do something else than you expect.
 
 Not long after this we have an application that works with all three layers. However, there are still many details
 
 missing before the application is appropriate for production. For instance, the server code is in one big file which does not scale for a bigger API. Also, there is no error handling. We return to these and other issues later.
 
-\section{Further Lessons From Example 2}
-As advocated by Fowler\cite{Fowler2023}, before we started to work with ChatGPT on Example 2, we provided an elaborate description of the technology stack and the system architecture. Based on that, we turned the question around and asked ChatGPT which additional information he needed to best help us during our development task.
-
-This resulted in a long list of questions, which we answered and which – as confirmed by ChatGPT – provided a good basis for our collaboration.
-
-\textbf{LESSON 15:} If ChatGPT is lacking context, he may make assumptions instead of asking for clarifications. You can circumvent this by explicitly directing him initially to ask clarifications.
+TODO
+\textbf{Lesson 15:} If ChatGPT is lacking context, he may make assumptions instead of asking for clarifications. You can circumvent this by explicitly directing him initially to ask clarifications.
 
 Areas where ChatGPT's help proved useful or invaluable:
 • Rewriting the security and authentication layer,
@@ -284,7 +244,7 @@ impossible after 2-3 iterations.
 
 At this point we reverted to classical techniques and studied HTML and CSS documentation and manually did the needed adjustments.
 
-\textbf{LESSON 16:} Sometimes, several iterations do not bring you closer to a solution. In these cases, consider reverting to classical techniques, like Googling, Stack Overflow, YouTube demos, reading the documentation, etc.
+\textbf{Lesson 16:} Sometimes, several iterations do not bring you closer to a solution. In these cases, consider reverting to classical techniques, like Googling, Stack Overflow, YouTube demos, reading the documentation, etc.
 
 As the discipline of coding with ChatGPT evolves, it can be expected that efficient approaches will be developed to deal with UI specification, CSS, SASS, etc.
 
@@ -295,14 +255,14 @@ Also, you can request that controls be used from standard libraries such as mate
 For instance, In Example 2, when we later created a basic application based on Next.js, he was expecting a file
  
 structured based on the classical router with the pages directory. In contrast, the default option when creating Next.js applications these days uses the new App router.
-\textbf{LESSON 17:} ChatGPT currently does not know about knowledge published after September 2021.
+\textbf{Lesson 17:} ChatGPT currently does not know about knowledge published after September 2021.
 
 \section{Create the Tests}
 As mentioned, ChatGPT – like most developers – generates code with errors, even errors that were previously fixed.
 
 The most efficient approach to dealing with these is to have two slim test suites, one that tests the API and one that tests the UI.
 
-For Example 1, the UI test was produced with Puppeteer. It has these steps:
+For the POC, the UI test was produced with Puppeteer. It has these steps:
 \begin{itemize}
     \item Open browser and go to main page.
     \item Click Show completed todos.
@@ -319,14 +279,14 @@ When adding new functionality from ChatGPT we check locally that the UI test run
 
 The API test was a sequence of API calls in code using axios (a HTTP client library) imitating a UI interaction. Again, the test ends by deleting the data it has added using the API.
 
-\textbf{LESSON 18:} ChatGPT generates several errors. It is valuable to have a slim UI test and API test that can be run locally before merging pull requests.
+\textbf{Lesson 18:} ChatGPT generates several errors. It is valuable to have a slim UI test and API test that can be run locally before merging pull requests.
 We do not bother to mock database or service layer. Since we have the development environment running locally, we can rely on it as long as the tests:
 \begin{itemize}
     \item Do not make any assumptions about the condition of the database on entry.
     \item Leave the database in the same condition on exit as it was in on entry.
 \end{itemize}
 
-\textbf{LESSON 19:} By keeping the tests slim, lightweight, and direct, they do not need to be time consuming and can be a good way of testing pull requests from ChatGPT.
+\textbf{Lesson 19:} By keeping the tests slim, lightweight, and direct, they do not need to be time consuming and can be a good way of testing pull requests from ChatGPT.
 The tests were written manually, because we wanted to make sure the code from ChatGPT did what we asked. Some people prefer to let ChatGPT generate the tests, but we see a risk that when ChatGPT gets something wrong in code, he will get the same thing wrong in tests. Indeed, errors were frequently about aspects that were not sufficiently well communicated, e.g., field names.
 
 Nevertheless, we are open to the approach that you start by having ChatGPT create the tests and review that they capture what you want.
@@ -338,13 +298,13 @@ To be fair, when he generates some code, he will sometimes tell you that this is
 
 An obvious example is when the same code occurs in multiple places. In this case we want to factor it out.
 
-For instance, in Example 1 we added the possibility to have some fields of the todo encrypted in the database (GDPR, you know the drill), so that developers cannot see the contents of the fields when they access the database.
+For instance, in the POC we added the possibility to have some fields of the todo encrypted in the database (GDPR, you know the drill), so that developers cannot see the contents of the fields when they access the database.
 
 The code to encrypt when storing and decrypt when fetching should not be replicated to the handler of each end point. There should rather be utility functions that are called from the API endpoints handlers:
  
 You can handle these requirements up front when asking code to be generated or refactor along the way by explaining to Chat GPT the current files and their contents and the required refactoring.
 
-\textbf{LESSON 20:} As you review the PRs from ChatGPT, keep an eye on parts of the code that could or should be refactored. Either do the refactoring yourself or ask ChatGPT to do it.
+\textbf{Lesson 20:} As you review the PRs from ChatGPT, keep an eye on parts of the code that could or should be refactored. Either do the refactoring yourself or ask ChatGPT to do it.
 
 In general, we want to limit refactoring to a reasonable limit and only allow it when it has a tangible result and good balance between effort and benefit not based solely on speculation.
 
@@ -357,7 +317,7 @@ When you design your application with ChatGPT there are typically two different 
     \item You are doing this in an exploratory manner.
 \end{itemize}
 
-Both approaches have their merits. If you work in the explanatory way, you should expect to do refactoring along the way. ChatGPT can provide advice on the structure and even generate the files. For instance, at the end of Example 1, the UI looked like this:
+Both approaches have their merits. If you work in the explanatory way, you should expect to do refactoring along the way. ChatGPT can provide advice on the structure and even generate the files. For instance, at the end of the POC, the UI looked like this:
 
 Similarly, the API looked like this:
 
@@ -365,7 +325,7 @@ Have a clear structure for the files of your application in mind from the beginn
 
 Similarly, be prepared that as more complexity arrives, a single layer may be split into several layers, e.g., for the API as service, controller, repo, etc.
 
-\textbf{LESSON 21:} You are responsible for ensuring that the file structure of the application is manageable. Define it from the outset or refactor it (with the help of ChatGPT) along the way.
+\textbf{Lesson 21:} You are responsible for ensuring that the file structure of the application is manageable. Define it from the outset or refactor it (with the help of ChatGPT) along the way.
 
 \section{Keep The Code Under Control}
 As mentioned, you should be prepared to refactor. What was said in the preceding section was about splitting large files into smaller more manageable files, e.g., 
@@ -373,18 +333,18 @@ splitting a single file with the handlers for all end points into separate files
 
 Also, we have mentioned that every response from ChatGPT should be seen as a pull request. That way no code ever enters the code repository without some sanity check. You don't need to read every single line, but you need to gain confidence that the code follows the philosophy and guidelines that you are trying to enforce. What we can add to this is that the code should be structurally consistent. This means that how different kinds of functionality or logic is structured or organized should be the same from feature to feature.
   
- For instance, in Example 1, the page fragments were initially classes. However, when we added the page for adding comments on todos, we introduced version 6.14.1 of react-router-dom and had to make use of the useParams and useNavigate hooks for retrieving the URL parameters and for navigation, respectively. And this led to some classes being reformulated as functions. In this case, it is preferable that all the components are functions.
+ For instance, in the POC, the page fragments were initially classes. However, when we added the page for adding comments on todos, we introduced version 6.14.1 of react-router-dom and had to make use of the useParams and useNavigate hooks for retrieving the URL parameters and for navigation, respectively. And this led to some classes being reformulated as functions. In this case, it is preferable that all the components are functions.
 
 The reason ChatGPT got us into the classes formulation in the first place may be that this was the most widespread method during the period of documents that ChatGPT has 
 been trained with.
 
-\textbf{LESSON 22:} Keep the code consistent. ChatGPT may change structure of the code he generates when new requirements from you become clear. You should refactor the previously generated code (make ChatGPT do it) when this happens. Consider code measurement tooling at the end of the project to confirm and document consistency.
+\textbf{Lesson 22:} Keep the code consistent. ChatGPT may change structure of the code he generates when new requirements from you become clear. You should refactor the previously generated code (make ChatGPT do it) when this happens. Consider code measurement tooling at the end of the project to confirm and document consistency.
 
 It is claimed in [2] regarding the code generated by ChatGPT that "For all practical purposes, it's 'legacy code,' even if it's only a few minutes old." As hinted at earlier, this does not apply to the approach described here:
 1. Developers may leave you and are not there to explain their code. ChatGPT and related technologies are here to stay and will improve over time.
 2. You must review the code from ChatGPT and adopt it as your own code. So long as you are there, it's not legacy.
 
-\textbf{LESSON 23:} See the code by ChatGPT as your code. You must be able to account for it. That way it has same value as code developed by you or your developers.
+\textbf{Lesson 23:} See the code by ChatGPT as your code. You must be able to account for it. That way it has same value as code developed by you or your developers.
 
 \section{Go To Production}
 So, you have your code generated by ChatGPT and it does what you asked. The UI tests run, the API tests run, all good. But are you ready for production?
@@ -398,15 +358,15 @@ For example:
   
 Again, such responses should be checked with alternative sources.
 
-\textbf{LESSON 24:} The code that you get from ChatGPT may not be ready for production, but he can help you understand what needs to be checked and how, and which changes are needed as a result of the checks.
+\textbf{Lesson 24:} The code that you get from ChatGPT may not be ready for production, but he can help you understand what needs to be checked and how, and which changes are needed as a result of the checks.
 
 \section{Set Up The Prod Environment}
 
 Like with the development environment, we eventually need a production environment.
 
-For Example 1, we used Azure Postgres for the database layer. For the UI and the API, we initially used Azure App service. For the UI, upload took ages and there were some issues getting it to work. After a while we backtracked and looked for demos of how to deploy a React application on Azure and changed to Azure static web app, which ran much smoother.
+For the POC, we used Azure Postgres for the database layer. For the UI and the API, we initially used Azure App service. For the UI, upload took ages and there were some issues getting it to work. After a while we backtracked and looked for demos of how to deploy a React application on Azure and changed to Azure static web app, which ran much smoother.
 
-We need some additional DevOps work. For instance, as mentioned, for Example 1 we set up a GitHub repository and had automatic deploy to the environment when there are commits to the branch.
+We need some additional DevOps work. For instance, as mentioned, for the POC we set up a GitHub repository and had automatic deploy to the environment when there are commits to the branch.
 
 Depending on your organizational setup, number of applications to develop, etc. you may find it desirable to script provisioning of your environments as often done.
 
@@ -420,7 +380,7 @@ This can be used to train him to deal with formal specifications of UI. For inst
 
 We have already pursued this approach some way but leave as future work to report on it in detail.
 
-\textbf{LESSON 25:} Formalize your communication with ChatGPT with initial training. That way the communication can hopefully be way more efficient and less ambiguous.
+\textbf{Lesson 25:} Formalize your communication with ChatGPT with initial training. That way the communication can hopefully be way more efficient and less ambiguous.
 Indeed, it's been a goal in the software engineering community for decades to formalize development. We create a specification in some formal language, and the system generates the code which is provably correct with respect to the specification.
 
 So far this did not become a widespread practice in the community. We can speculate that the following reasons apply:
@@ -476,12 +436,12 @@ A revolution in software development has started. Are organizations ready to ado
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{Pictures/Picture1.jpg}
+    \includegraphics[width=0.5\textwidth]{Pictures/Picture2.jpg}
     \caption{Description of Picture1}
     \label{fig:picture1}
 \end{figure}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{Pictures/Picture2.jpg}
     \caption{Description of Picture2}
     \label{fig:picture2}
 \end{figure}
